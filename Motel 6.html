@@ -1,0 +1,865 @@
+<tw-storydata name="Motel 6" startnode="30" creator="Twine" creator-version="2.0.11" ifid="4D7A0D84-B015-446E-94C8-E2087DBE2ED9" format="SugarCube 2 (local/offline)" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/***********************************************************************
+	BLEACHED - A largely white style for SugarCube (v2.2.0+)
+***********************************************************************/
+
+html {
+	color: #111;
+	background-color: #fff;
+}
+passage {
+	background-color: #fff;
+}
+
+body {
+	color: #111;
+	background-color: #fff;
+}
+a {
+	color: #35c;
+}
+a:hover {
+	color: #57e;
+}
+span.link-disabled {
+	color: #777;
+}
+button {
+	color: #111;
+	background-color: #acf;
+	border-color: #8ad;
+}
+button:hover {
+	background-color: #8ad;
+	border-color: #68b;
+}
+button:disabled {
+	background-color: #ccc;
+	border-color: #aaa;
+}
+input, select, textarea {
+	color: #111;
+	border-color: #ccc;
+}
+input:focus, select:focus, textarea:focus,
+input:hover, select:hover, textarea:hover {
+	background-color: #eee;
+	border-color: #111;
+}
+hr {
+	border-color: #111;
+}
+
+.error {
+	background-color: #eaa;
+	border-left-color: #d77;
+}
+
+#ui-bar {
+	text-align: left;
+	background-color: #eee;
+	border-color: #ccc;
+}
+#ui-bar hr {
+	border-color: #ccc;
+}
+#ui-bar-toggle,
+#ui-bar-history [id|="history"] {
+	color: #111;
+	border-color: #ccc;
+}
+#ui-bar-toggle:hover,
+#ui-bar-history [id|="history"]:hover {
+	background-color: #ccc;
+	border-color: #111;
+}
+#ui-bar-history [id|="history"]:disabled {
+	color: #ccc;
+	background-color: transparent;
+	border-color: #ccc;
+}
+#menu ul {
+	border-color: #ccc;
+}
+#menu li:not(:first-child) {
+	border-top-color: #ccc;
+}
+#menu li a {
+	color: #111;
+}
+#menu li a:hover {
+	background-color: #ccc;
+	border-color: #111;
+}
+
+/* Default dialog styling */
+#ui-overlay {
+	background-color: #777;
+}
+#ui-dialog-titlebar {
+	background-color: #ccc;
+}
+#ui-dialog-close:hover {
+	background-color: #b44;
+	border-color: #a33;
+}
+#ui-dialog-body {
+	background-color: #fff;
+	border-color: #ccc;
+}
+#ui-dialog-body hr {
+	background-color: #ccc;
+}
+
+/* List-based dialog styling */
+#ui-dialog-body.list li:not(:first-child) {
+	border-top-color: #ccc;
+}
+#ui-dialog-body.list li a {
+	color: #111;
+}
+#ui-dialog-body.list li a:hover {
+	background-color: #ccc;
+	border-color: #111;
+}
+
+/* Saves dialog styling */
+#ui-dialog-body.saves > *:not(:first-child),
+#ui-dialog-body.saves tr:not(:first-child) {
+	border-top-color: #ccc;
+}
+#ui-dialog-body.saves .empty {
+	color: #777;
+}
+
+/* Settings dialog styling */
+#ui-dialog-body.settings button[id|="setting-control"] {
+	color: #111;
+	border-color: #ccc;
+}
+#ui-dialog-body.settings button[id|="setting-control"]:hover {
+	background-color: #eee;
+	border-color: #111;
+}
+#ui-dialog-body.settings button[id|="setting-control"].enabled {
+	background-color: #9e9;
+	border-color: #7c7;
+}
+#ui-dialog-body.settings button[id|="setting-control"].enabled:hover {
+	background-color: #7c7;
+	border-color: #5a5;
+}
+
+/* Debug view styling */
+html:not(.debug-view) #debug-view-toggle {
+	color: #111;
+	border-color: #ccc;
+}
+html:not(.debug-view) #debug-view-toggle:hover {
+	background-color: #eee;
+	border-color: #111;
+}
+html.debug-view #debug-view-toggle {
+	background-color: #9e9;
+	border-color: #7c7;
+}
+html.debug-view #debug-view-toggle:hover {
+	background-color: #7c7;
+	border-color: #5a5;
+}
+html.debug-view .debug {
+	background-color: #dc9;
+}
+html.debug-view .debug.hidden,
+html.debug-view .debug.hidden .debug {
+	background-color: #bbb;
+}
+
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Removes an element from an array.
+// String value: the value to search and remove.
+// return: an array with the removed element; false otherwise.
+Array.prototype.remove = function(value) {
+var idx = this.indexOf(value);
+if (idx != -1) {
+return this.splice(idx, 1); // The second parameter is the number of elements to remove.
+}
+return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Front Office" tags="" position="2820,80">&#39;&#39;Front Office&#39;&#39;
+&lt;&lt;if $visitedStacey&gt;&gt;You&#39;ve already seen Stacey today, come back tomorrow.&lt;&lt;else&gt;&gt;Stacey looks up with a smile on her face as you approach.
+
+[[Talk|Stacey Talk Friendly]] 
+
+[[Flirt|Stacey Flirt]]
+
+[[Give item|Stacey Item]]
+	
+&lt;&lt;endif&gt;&gt;
+[[Back|Survey]] </tw-passagedata>
+<tw-passagedata pid="2" name="Guest Rooms" tags="" position="2195,553">&lt;&lt;if $time &gt;= 4&gt;&gt;All the guests are asleep untill tomorrow.&lt;&lt;else&gt;&gt;&#39;&#39;Rooms:&#39;&#39;
+
+
+
+[[Back|Survey]] </tw-passagedata>
+<tw-passagedata pid="3" name="Road" tags="" position="3912,736">You approach the road that runs parallel along the motel.  There is a sign post on the other side of the road.  One sign points south and simply says &#39;Town&#39; the other points north and only has a question mark printed on it. 
+
+&#39;&#39;To:&#39;&#39;
+[[North to ?|Road Left]]
+
+[[South to town|Town Road]]
+
+
+[[Back|Survey]]</tw-passagedata>
+<tw-passagedata pid="4" name="StoryInit" tags="" position="65,467">&lt;&lt;set $pname to &quot;John&quot;&gt;&gt;
+&lt;&lt;set $ppower to 50&gt;&gt;
+&lt;&lt;set $pgender to &quot;male&quot;&gt;&gt;
+&lt;&lt;set $gold to 5000&gt;&gt;
+&lt;&lt;set $income to 0&gt;&gt;
+&lt;&lt;set $inv to []&gt;&gt;
+&lt;&lt;set $perks to []&gt;&gt;
+&lt;&lt;set $tasks to []&gt;&gt;
+&lt;&lt;set $completed to []&gt;&gt;
+&lt;&lt;set $locations to []&gt;&gt;
+&lt;&lt;set $chars to [&quot;Stacey&quot;]&gt;&gt;
+&lt;&lt;set $day to 1&gt;&gt;
+&lt;&lt;set $time to 0&gt;&gt;
+
+
+&lt;&lt;set $visitedStacey to false&gt;&gt;
+&lt;&lt;set $sexStacey to 0&gt;&gt;
+&lt;&lt;set $relStacey to 0&gt;&gt;
+&lt;&lt;set $invStacey to []&gt;&gt;
+&lt;&lt;set $introconvo to []&gt;&gt;
+
+
+&lt;&lt;set $visitedClaire to false&gt;&gt;
+&lt;&lt;set $wearingClaire to &quot;work scrubs&quot;&gt;&gt;
+&lt;&lt;set $sexClaire to 0&gt;&gt;
+&lt;&lt;set $relClaire to 0&gt;&gt;
+&lt;&lt;set $invClaire to []&gt;&gt;
+&lt;&lt;set $titleClaire to &quot;Claire&quot;&gt;&gt;
+&lt;&lt;set $titlePlayer to &quot;John&quot;&gt;&gt;
+&lt;&lt;set $stateClaire to []&gt;&gt;
+
+
+&lt;&lt;set $hasSampson to true&gt;&gt;
+&lt;&lt;set $visitedSampson to false&gt;&gt;
+&lt;&lt;set $sexSampson to 0&gt;&gt;
+&lt;&lt;set $relSampson to 0&gt;&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="5" name="Survey" tags="" position="3076,500">&#39;&#39;Motel Front&#39;&#39;
+You stand facing the Motel.
+
+&#39;&#39;To:&#39;&#39;
+[[Your Apartment]]
+&lt;&lt;if $time &lt; 4&gt;&gt;
+[[Front Office]]
+
+[[Guest Rooms]]
+
+[[Boiler Room]]
+
+[[Laundry Room]]
+
+[[Courtyard]]
+
+[[Road]] 
+&lt;&lt;endif&gt;&gt;
+</tw-passagedata>
+<tw-passagedata pid="6" name="Road Left" tags="" position="3904,496">The road continues on, the landscape is bleak and flat.  However you eventually come to a fork in the road.  Which path do you take?
+
+[[Left|Road Left Left]]
+
+[[Straight|Road Left Straight]]
+
+[[Right|Road Left Right]]</tw-passagedata>
+<tw-passagedata pid="7" name="Town Gate" tags="" position="3911,1023">&#39;&#39;Town Gate&#39;&#39;
+
+[[Town Center]]
+
+&lt;&lt;set $time++&gt;&gt;
+&lt;&lt;if !$locations.contains(&quot;Town&quot;)&gt;&gt;&lt;&lt;set $locations.push(&quot;Town&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="8" name="Tracey&#39;s Door" tags="" position="1568,960">&lt;&lt;if $visitedTracey&gt;&gt;You&#39;ve already seen Tracey today, come back tomorrow.&lt;&lt;else&gt;&gt;You knock on Tracey&#39;s door.
+	&lt;&lt;if $sexTracey&gt;&gt;
+	A smirk appears on her lips when she sees you.
+	&quot;Why don&#39;t you come in, she says.&quot;
+	[[Enter|Tracey&#39;s Room]]
+	&lt;&lt;else&gt;&gt;
+	She answers the door and looks at you expectantly.  &quot;Yes?&quot;
+	&lt;&lt;endif&gt;&gt;
+	
+	[[Peak Inside|Tracey Peep]]
+&lt;&lt;endif&gt;&gt;
+[[Back|Guest Rooms]] </tw-passagedata>
+<tw-passagedata pid="9" name="Sampson&#39;s Door" tags="" position="1720,778">&lt;&lt;if $visitedSampson&gt;&gt;You&#39;ve already seen Sampson today, come back tomorrow.&lt;&lt;else&gt;&gt;You knock on Sampson&#39;s door.  You hear some rustling before the door opens and Sampson appears, his large muscular body filling the door frame.
+	&lt;&lt;if $sexSampson and $ppower &lt; 50&gt;&gt;
+	He smiles when he sees you and without saying a word places his large hand on your shoulder and leads you into his room.
+	
+	[[Enter|Sampson&#39;s Room]]
+	&lt;&lt;else&gt;&gt;
+	&quot;Hello &lt;&lt;print $pname&gt;&gt;, what can I do for you.&quot;  He says softly, his gaze sizing you up.&quot;
+	
+	[[Talk|Sampson Talk Friendly]]
+	&lt;&lt;endif&gt;&gt;
+	
+	[[Peak Inside|Sampson Peep]]
+&lt;&lt;endif&gt;&gt;
+
+[[Back|Guest Rooms]] </tw-passagedata>
+<tw-passagedata pid="10" name="Ones&#39;s Room" tags="" position="1855,721">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="11" name="Stacey Talk Friendly" tags="" position="2681,211">
+&#39;&#39;Say:&#39;&#39;
+&lt;&lt;if $tasks.contains(&quot;-Make maid wanted ad&quot;) and !$completed.contains(&quot;-Make maid wanted ad&quot;)&gt;&gt;[[Can you make me a want ad?|Stacey Talk A]]&lt;&lt;endif&gt;&gt;
+[[Back|Front Office]] </tw-passagedata>
+<tw-passagedata pid="12" name="Tracey&#39;s Room" tags="" position="1404,1108"></tw-passagedata>
+<tw-passagedata pid="13" name="Tracey Peep" tags="" position="1264,1088">You don&#39;t see or hear anything interesting.
+
+[[Back|Tracey&#39;s Door]] </tw-passagedata>
+<tw-passagedata pid="14" name="Sampson&#39;s Room" tags="" position="1695,1061">Sampson takes his shirt off, flexing his bulging muscles as he pulls it over his head, a large bulge is visible through his pants.  Then his fixes his eyes on you.
+
+&quot;I&#39;ve been feeling frisky today.  How are you going to take care of that?&quot;
+
+[[Bottom Oral|Bottom Oral Sampson]]
+
+[[Bottom Anal|Bottom Anal Sampson]]
+</tw-passagedata>
+<tw-passagedata pid="15" name="Sampson Talk Friendly" tags="" position="1778,930">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="16" name="Sampson Peep" tags="" position="1903,930">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="17" name="Bottom Oral Sampson" tags="" position="1695,1210">You step close to him and get down on your knees, your nose bumps his growing erection.  His musk fills your nostrils and your breathe him in, your mouth waters in anticipation.
+
+You reach up and clasp his trousers and his hips and slowly tug down, his cock strains, then springs free, almost hitting you in the face.  Sampsons pants pool on the ground and he steps out of them.  
+
+You kiss the base, moaning softly to yourself then drag your tounge along his immense length.  //So big, so strong,// you think to yourself.  You reach the head and begin planting kisses all over the flat flared head, letting your tongue coat it in saliva.  You glance up and your eyes meet Sampson&#39;s, he nods approvingly.
+
+Spurred on by this you open your mouth wide, straining your jaw and manage to pop the head into your mouth.  Sampson moans softly as you being to bob your head and suck slightly, getting used to the large object filling your mouth.  Then you close your eyes, take a deep breath and push forward, feeling his length push into your throat, then pull back and inhale.  You begin a slow rythym, pushing him deeper into your throat with each bob.  But you reach a breaking point, only able to get about halfway down his cock before being unable to continue.  Sampson gently takes a hold of your head in his big hands and pulls you off him.  You panic thinking you have failed at your task.  But he simply sits on the bed behind him and spreads his legs, beconning you forward.
+
+You shuffle forward on your knees, rising slightly to again push the tip into your open mouth.</tw-passagedata>
+<tw-passagedata pid="18" name="Bottom Anal Sampson" tags="" position="1843,1210">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="19" name="Command Claire" tags="" position="3123,1160">&quot;&lt;&lt;print $titleClaire&gt;&gt;.&quot;
+&quot;Yes &lt;&lt;print $titlePlayer&gt;&gt;?&quot;  She asks quietly.
+
+[[Change your title|Player Title Claire]]
+
+[[Change her title|Title Claire]]
+
+
+
+[[Back|Train Claire]]
+
+</tw-passagedata>
+<tw-passagedata pid="20" name="Prepare Claire" tags="" position="2292,1016">&lt;&lt;if not $ClaireisGagged&gt;&gt;[[Gag her|Prepare Claire 1]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if not $ClaireisPlugged&gt;&gt;[[Plug her|Prepare Claire 2]]&lt;&lt;endif&gt;&gt;
+[[Spank her|Perpare Claire 3]]
+&lt;&lt;if not $ClaireisGagged&gt;&gt;[[Collar her|Prepare Claire 4]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if not $ClaireisBoundup and not $ClaireisBounddown&gt;&gt;[[Restrain Claire face up|Prepare Claire 5]]
+[[Restrain Claire face down|Prepare Claire 6]]
+&lt;&lt;endif&gt;&gt;
+[[Give item|Give Claire Clothes]]
+
+[[Change clothes|Claire Clothes]]
+
+[[Back|Train Claire]] </tw-passagedata>
+<tw-passagedata pid="21" name="Penetrate Claire" tags="" position="2710,1620">[[Bottom Oral|Penetrate Claire O]]
+
+[[Top Vagina|Pentrate Claire V]]
+
+[[Top Anal|Penetrate Claire A]]</tw-passagedata>
+<tw-passagedata pid="22" name="Player Title Claire" tags="" position="2983,1031">&quot;From now on, you will address me as,&quot;
+
+&#39;&#39;Say:&#39;&#39;
+[[$pname|Command Claire][$titlePlayer to $pname]]
+
+[[Sir|Command Claire][$titlePlayer to &quot;Sir&quot;]]
+
+[[Master|Command Claire][$titlePlayer to &quot;Master&quot;]]
+
+[[Daddy|Command Claire][$titlePlayer to &quot;Daddy&quot;]]
+
+[[No Change|Command Claire]]</tw-passagedata>
+<tw-passagedata pid="23" name="Title Claire" tags="" position="3300,1113">&quot;From now on, I will address you as&quot;
+
+&#39;&#39;Say:&#39;&#39;
+[[Claire|Command Claire][$titleClaire to &quot;Claire&quot;]]
+
+[[Slave|Command Claire][$titleClaire to &quot;Slave&quot;]]
+
+[[Slut|Command Claire][$titleClaire to &quot;Slut&quot;]]
+
+[[Baby|Command Claire][$titleClaire to &quot;Baby&quot;]]
+
+[[Cumslut|Command Claire][$titleClaire to &quot;Cumslut&quot;]]
+
+[[No Change|Command Claire]]</tw-passagedata>
+<tw-passagedata pid="24" name="Give Claire Clothes" tags="" position="2480,878">What would you like to give her?
+
+&lt;&lt;if $inv.contains(&quot;French maid outfit&quot;) and !$invClaire.contains(&quot;French maid outfit&quot;)&gt;&gt;[[French maid outfit|Give Claire French Maid Outfit]]&lt;&lt;endif&gt;&gt;
+
+[[Nothing|Prepare Claire]] </tw-passagedata>
+<tw-passagedata pid="25" name="Sleep" tags="" position="2678,610">&lt;&lt;if $time &gt;= 3&gt;&gt;You got to sleep
+
+[[Next|Wake]]
+&lt;&lt;else&gt;&gt;It&#39;s too early to go to sleep, you&#39;re not tired yet.
+
+[[Back|Your Apartment]]
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="26" name="Wake" tags="" position="2938,390">&lt;&lt;if $tasks.contains(&quot;-Wait for a maid to apply&quot;)&gt;&gt;A maid applies[[Next|Claire 1]]&lt;&lt;else&gt;&gt;You wake up and head outside to check on the motel, ready to take on a new day.
+
+[[Next|Survey]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;set $day++&gt;&gt;
+&lt;&lt;set $time to 0&gt;&gt;
+&lt;&lt;set $visitedStacey to false&gt;&gt;
+&lt;&lt;set $visitedClaire to false&gt;&gt;
+&lt;&lt;set $visitedSampson to false&gt;&gt;
+&lt;&lt;set $gold to $gold + $income&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="27" name="Road Left Left" tags="" position="3612,488">The road continues on, the landscape is bleak and flat.  However you eventually come to a fork in the road.  Which path do you take?
+
+[[Left|Road Left A Left]]
+
+[[Straight|Road Left A Straight]]
+
+[[Right|Road Left A Right]]</tw-passagedata>
+<tw-passagedata pid="28" name="Road Left Straight" tags="" position="3904,344">The road continues on, the landscape is bleak and flat.  However you eventually come to a fork in the road.  Which path do you take?
+
+[[Left|Road Left B Left]]
+
+[[Straight|Road Left B Straight]]
+
+[[Right|Road Left B Right]]</tw-passagedata>
+<tw-passagedata pid="29" name="Road Left Right" tags="" position="4193,488">The road continues on, the landscape is bleak and flat.  However you eventually come to a fork in the road.  Which path do you take?
+
+[[Left|Road Left C Left]]
+
+[[Straight|Road Left C Straight]]
+
+[[Right|Road Left C Right]]</tw-passagedata>
+<tw-passagedata pid="30" name="Begin" tags="" position="1084,88">Stupid disclaimer.  You must be over 18 or legally allowed to view pornography to play this game.
+
+It is strongly recommended you play through the intro at least once for context about the story.
+
+Check &quot;Tasks&quot; in the sidebar for tips on what to do next and remembering which items to give to who.
+
+[[New Game|Introduction]]
+
+If you&#39;ve already played
+
+[[Skip Intro|Skip Intro 2]]</tw-passagedata>
+<tw-passagedata pid="31" name="Skip Intro 2" tags="" position="1372,100">What is the name?  &lt;&lt;textbox &quot;$pname&quot; &quot;John&quot; &quot;Survey&quot; autofocus&gt;&gt;&lt;&lt;button Enter &quot;Survey&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+
+&lt;&lt;set $tasks.push(&quot;-Hire a maid&quot;)&gt;&gt;
+&lt;&lt;set $locations.push(&quot;Motel&quot;)&gt;&gt;
+</tw-passagedata>
+<tw-passagedata pid="32" name="Prepare Claire 1" tags="" position="2110,969">You set behind her and place the ballgag in her mouth, then tighten the strap around the back of her head.
+
+&lt;&lt;set $ClaireisGagged to true&gt;&gt;
+
+[[Next|Prepare Claire]]</tw-passagedata>
+<tw-passagedata pid="33" name="Prepare Claire 2" tags="" position="2105,1094">You grab the buttplug from your bag.
+&lt;&lt;if not $ClaireisGagged&gt;&gt;You reach down and place the tip between Claire&#39;s lips.
+&quot;Suck.&quot;
+She obiediently parts her lips and envelops the plug with her mouth, sucking and bobbing her head slightly.  When you&#39;re satisfied it&#39;s suffienciently covered you push her head down, which exposes her ass.  You then slowly push the plug against her rosebud until it slips inside illiciting a gasp from Claire.
+&lt;&lt;else&gt;&gt;You tease the tip at the entrance of her pussy, letting her juices coat the plug for lubrication.  When it&#39;s suffiencintly covered you push her head down, which exposes her ass.  You then slowly push the plug against her rosebud until it slips inside, you hear Claire moan into her gag.
+&lt;&lt;endif&gt;&gt;
+
+&lt;&lt;set $ClaireisPlugged to true&gt;&gt;
+[[Next|Prepare Claire]]</tw-passagedata>
+<tw-passagedata pid="34" name="Perpare Claire 3" tags="" position="2108,1219">&lt;&lt;if $ClaireisBoundup&gt;&gt;You can&#39;t spank her now that she is bound lying on the bed.&lt;&lt;else&gt;&gt;You bend her over your knee and spank her repeatedly.
+&lt;&lt;endif&gt;&gt;
+
+[[Next|Prepare Claire]] </tw-passagedata>
+<tw-passagedata pid="35" name="Prepare Claire 4" tags="" position="2242,1222">Claire is collered.
+[[Next|Prepare Claire]] 
+&lt;&lt;set $ClaireisCollared to true&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="36" name="Prepare Claire 5" tags="" position="2387,1241">Claire is bound spread eagle lying on her back on the bed.
+[[Next|Prepare Claire]] 
+&lt;&lt;set $ClaireisBoundup to true&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="37" name="Prepare Claire 6" tags="" position="2528,1302">Claire is bound face down, hand tied together to the headboard.  Feet spread tied apart, on her knees.
+[[Next|Prepare Claire]] 
+&lt;&lt;set $ClaireisBounddown to true&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="38" name="Pentrate Claire V" tags="" position="2790,1968">You have sex with Claire&#39;s vagina.
+
+&lt;&lt;set $visitedClaire to true&gt;&gt;
+&lt;&lt;set $sexClaire++&gt;&gt;
+[[Next|Claire&#39;s Door]]</tw-passagedata>
+<tw-passagedata pid="39" name="Penetrate Claire A" tags="" position="2856,1838">You have sex with Claire&#39;s asshole.
+
+&lt;&lt;set $visitedClaire to true&gt;&gt;
+&lt;&lt;set $sexClaire++&gt;&gt;
+[[Next|Survey]]</tw-passagedata>
+<tw-passagedata pid="40" name="Road Left C Left" tags="" position="4187,652">The trail deteriorates, broken up by more and more rocks and plants and eventually dissapears.  Looks like there&#39;s nothing futher this way, you&#39;ll have to backtrack the way you came and take a differerent route next time.
+&lt;&lt;set $time++&gt;&gt;
+
+[[Next|Road]] </tw-passagedata>
+<tw-passagedata pid="41" name="Road Left C Straight" tags="" position="4386,466">Desert Lizard</tw-passagedata>
+<tw-passagedata pid="42" name="Road Left C Right" tags="" position="4221,361">The trail deteriorates, broken up by more and more rocks and plants and eventually dissapears.  Looks like there&#39;s nothing futher this way, you&#39;ll have to backtrack the way you came and take a differerent route next time.
+&lt;&lt;set $time++&gt;&gt;
+
+[[Next|Road]] </tw-passagedata>
+<tw-passagedata pid="43" name="Road Left B Left" tags="" position="3735,271">The trail deteriorates, broken up by more and more rocks and plants and eventually dissapears.  Looks like there&#39;s nothing futher this way, you&#39;ll have to backtrack the way you came and take a differerent route next time.
+&lt;&lt;set $time++&gt;&gt;
+
+[[Next|Road]] </tw-passagedata>
+<tw-passagedata pid="44" name="Road Left B Straight" tags="" position="3898,201">The trail deteriorates, broken up by more and more rocks and plants and eventually dissapears.  Looks like there&#39;s nothing futher this way, you&#39;ll have to backtrack the way you came and take a differerent route next time.
+&lt;&lt;set $time++&gt;&gt;
+
+[[Next|Road]] </tw-passagedata>
+<tw-passagedata pid="45" name="Road Left B Right" tags="" position="4071,263">Mountain Cave</tw-passagedata>
+<tw-passagedata pid="46" name="Road Left A Left" tags="" position="3440,690">Dock (Sampson)</tw-passagedata>
+<tw-passagedata pid="47" name="Road Left A Straight" tags="" position="3388,516">The trail deteriorates, broken up by more and more rocks and plants and eventually dissapears.  Looks like there&#39;s nothing futher this way, you&#39;ll have to backtrack the way you came and take a differerent route next time.
+&lt;&lt;set $time++&gt;&gt;
+
+[[Next|Road]] </tw-passagedata>
+<tw-passagedata pid="48" name="Road Left A Right" tags="" position="3473,323">The trail deteriorates, broken up by more and more rocks and plants and eventually dissapears.  Looks like there&#39;s nothing futher this way, you&#39;ll have to backtrack the way you came and take a differerent route next time.
+&lt;&lt;set $time++&gt;&gt;
+
+[[Next|Road]] </tw-passagedata>
+<tw-passagedata pid="49" name="Penetrate Claire O" tags="" position="2636,1815">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="50" name="Your Apartment" tags="" position="2831,591">&#39;&#39;Your Room&#39;&#39;
+
+[[Sleep]]
+
+[[Back|Survey]] </tw-passagedata>
+<tw-passagedata pid="51" name="Pool" tags="" position="3201,903">&#39;&#39;Pool&#39;&#39;
+
+[[Back|Courtyard]] </tw-passagedata>
+<tw-passagedata pid="52" name="Boiler Room" tags="" position="3174,740">&#39;&#39;Boiler Room&#39;&#39;
+[[Back|Survey]] </tw-passagedata>
+<tw-passagedata pid="53" name="Introduction" tags="" position="416,83">You awaken surrounded by sand, heat and bright sunlight.  You have to squint your eyes in order to look around.  Nothing but sand all the way to the horizion, except for an outline of a building off in the distance.
+&lt;&lt;set $tasks.push(&quot;-Find shelter&quot;)&gt;&gt;
+&#39;&#39;To:&#39;&#39;
+[[The building|Intro 1]]</tw-passagedata>
+<tw-passagedata pid="54" name="Intro 1" tags="" position="416,234">You arrive at the front of the building several hours later greated by a large brightly lit neon sign that says, &quot;Motel 6.&quot;  The main building is two stories of rooms, eight in total, their doors exposed facing you and an office on the left side of the ground floor.  
+
+A small courtyard in front of that contains and empty pool and a couple of patio chairs.  A sign in the office window reads &quot;Vacancy.&quot;
+
+&#39;&#39;To:&#39;&#39;
+[[Motel Office|Intro 2]]</tw-passagedata>
+<tw-passagedata pid="55" name="Intro 2" tags="" position="416,384">The office is sparsley furnished, the front desk takes up the majority of the room with a few waiting chairs, a wilting fern and a lamp near the door.  No one appears to be manning the desk, but you see a small bell behind a sign that says &quot;Ring for Service&quot;
+
+&#39;&#39;Do:&#39;&#39;
+[[Ring Bell|Intro 3]]</tw-passagedata>
+<tw-passagedata pid="56" name="Intro 3" tags="" position="416,534">The bell dings loudly in the silent office and you hear a feminine voice from the back room.
+&quot;I&#39;ll be with you in just a minute.&quot;
+
+You wait for several minutes, until a deer, a female deer rounds the corner, staring a clipboard and muttering softly.
+
+She&#39;s tall and slender, wearing a short black skirt and stockings.  Her torso is covered with a simple white blouse, buttoned tightly and straining to contain her large round breasts which you can faintly see are covered by a black bra.  She peers at the clipboard through thick black glasses that sit atop her muzzle and her brown hair is done up in a tight bun.
+
+&quot;Hello and welcome to the Motel...&quot; she says wearily as she looks up from her clipboard.  Then she regonizes you, &quot;Boss!  Where have you been?&quot;
+
+&#39;&#39;Say:&#39;&#39;
+[[&quot;Huh?&quot;|Intro Convo 1]]
+
+</tw-passagedata>
+<tw-passagedata pid="57" name="Stacey Flirt" tags="" position="2825,240">&lt;&lt;if $sexStacey is 0&gt;&gt;&quot;Hey Stacey, you alluded to something else we used to do together.  Would you help me remember what that was?
+
+&lt;&lt;if $ppower &lt; 50 and $ppower &gt; 40&gt;&gt;&quot;I was wondering when you were going to make a move on me.&quot;  She says as a small grin forms on her lips.  
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt;= 40 and $ppower &gt;= 10&gt;&gt;Well if it isn&#39;t my favorite toy.
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &gt;= 60 and $ppower &lt;= 90&gt;&gt;
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &gt; 90 &gt;&gt;Take me however you want.
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt; 10 &gt;&gt;I love coming up with new ways to use you.
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;if $ppower &lt; 60 and $ppower &gt; 40&gt;&gt;&quot;I was wondering when you were going to make a move on me.&quot;  She says as a small grin forms on her lips.  
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt;= 40 and $ppower &gt;= 10&gt;&gt;&quot;Oh my God I&#39;m so horny, she says, while she undoes a few buttons on her blouse.  Her other traces down her body to the hem or her skirt, which she bunches up around her waist, showing off her black panties and garter belt.
+&quot;Actually can you just...&quot;  She reaches out and grabs your arm, pulling you down, you get the idea and sync to your knees.  Then she places her hand on the back of your head while pulling her panties to one side.  
+&quot;I&#39;ll give you a blowjob after I just need to cum.&quot;  Then she pulls your face right into her
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &gt;= 60 and $ppower &lt;= 90&gt;&gt;
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &gt; 90 &gt;&gt;Take me however you want.
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt; 10 &gt;&gt;I love coming up with new ways to use you.
+
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="58" name="Stacey Item" tags="" position="2970,230">What would you like to give Stacey?
+&lt;&lt;for</tw-passagedata>
+<tw-passagedata pid="59" name="Intro Convo 1" tags="" position="415,686">&quot;Are you feeling okay?&quot;  She asks concerned, her face creasing into worry.  
+&quot;This is the &#39;Motel 6&#39; which you own and operate.  I am of course your secratary Stacey.  I&#39;m also the front desk admin, errand girl and sometimes...&quot;  She stops, blushing.  &quot;Well, you&#39;re back now.  Do you need me to help you remember something?  Ask me anything!&quot;
+
+&#39;&#39;Say:&#39;&#39;
+&lt;&lt;if !$introconvo.contains(&quot;Intro Convo 2a&quot;)&gt;&gt;[[&quot;How long have I been gone?&quot;|Intro Convo 2a]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if !$introconvo.contains(&quot;Intro Convo 2b&quot;)&gt;&gt;[[&quot;Where are we?&quot;|Intro Convo 2b]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if !$introconvo.contains(&quot;Intro Convo 2c&quot;)&gt;&gt;[[&quot;Do you have any proof?&quot;|Intro Convo 2c]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if !$introconvo.contains(&quot;Intro Convo 2d&quot;)&gt;&gt;[[&quot;What was the last thing you help out with?&quot;|Intro Convo 2d]]&lt;&lt;endif&gt;&gt;
+[[&quot;No more questions.&quot;|Intro Convo 3]]</tw-passagedata>
+<tw-passagedata pid="60" name="Intro Convo 2a" tags="" position="276,840">&quot;A few hours I think, you said you were just going for a walk.  You&#39;ve never done that before.&quot;  Stacey replies.
+&lt;&lt;set $introconvo.push(&quot;Intro Convo 2a&quot;)&gt;&gt;
+[[Back|Intro Convo 1]] </tw-passagedata>
+<tw-passagedata pid="61" name="Intro Convo 2b" tags="" position="418,842">&quot;At the Motel 6,&quot; Stacey answers slowly.
+
+&quot;No I mean, this whole place, what country am I in?&quot;
+
+&quot;Oh, this is the &#39;Desert of No End&#39;.  Where else would we be?&quot;
+
+You shake your head in disbelief, but don&#39;t press further.
+&lt;&lt;set $introconvo.push(&quot;Intro Convo 2b&quot;)&gt;&gt;
+[[Back|Intro Convo 1]] </tw-passagedata>
+<tw-passagedata pid="62" name="Intro Convo 2c" tags="" position="565,836">&lt;&lt;set $introconvo.push(&quot;Intro Convo 2c&quot;)&gt;&gt;
+
+[[Back|Intro Convo 1]] </tw-passagedata>
+<tw-passagedata pid="63" name="Intro Convo 2d" tags="" position="715,836">&lt;&lt;set $introconvo.push(&quot;Intro Convo 2d&quot;)&gt;&gt;
+
+[[Back|Intro Convo 1]] </tw-passagedata>
+<tw-passagedata pid="64" name="Intro Convo 3" tags="" position="863,835">&quot;Alright well, let me show you around.  Maybe that will help jog your memory.&quot;  You follow her outside, where she stops and faces the hotel.  &quot;The layout is pretty simple, your apartment is on the ground floor, right next to the office.  Around back are the service doors, one for laundry and the other for the boiler room.  Then just the coutryard and pool out front, and you already know to find me at the front office.  We&#39;re a little short staffed at the moment, my first suggestion would be to find us a maid to clean the rooms.  Try looking in town, just follow the road south. Well I&#39;ll let you get to it.&quot;  She turns to head back to the office, then stops and turns back to you.  &quot;Oh, one last thing.  Do you remember your name?&quot;
+
+You shake your head.
+
+What&#39;s your name?  &lt;&lt;textbox &quot;$pname&quot; &quot;John&quot; &quot;Survey&quot; autofocus&gt;&gt;&lt;&lt;button Enter &quot;Survey&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;set $tasks.remove(&quot;-Find shelter&quot;)&gt;&gt;
+&lt;&lt;set $tasks.push(&quot;-Hire a maid&quot;)&gt;&gt;
+&lt;&lt;set $locations.push(&quot;Motel&quot;)&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="65" name="Tasks" tags="" position="68,743">&#39;&#39;Tasks:&#39;&#39;
+&lt;&lt;if $tasks.length is 0&gt;&gt;You have no tasks to complete right now.&lt;&lt;else&gt;&gt;&lt;&lt;for $i = 0; $i &lt; $tasks.length; $i++&gt;&gt;
+&lt;&lt;print $tasks[$i]&gt;&gt;
+&lt;&lt;endfor&gt;&gt;
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;back&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="66" name="Laundry Room" tags="" position="2753,845">&#39;&#39;Laundry Room&#39;&#39;
+&lt;&lt;if $chars.contains(&quot;Claire&quot;)&gt;&gt;&lt;&lt;if $visitedClaire&gt;&gt;The laundry room is empty, Claire is out doing her job.  Try checking in tomorrow.&lt;&lt;else&gt;&gt;
+You find Claire inside checking and cleaning the motel&#39;s laundry.  She&#39;s wearing her &lt;&lt;print $wearingClaire&gt;&gt;.
+
+&quot;$titleClaire,&quot; you say firmly.  She looks up and walks to you.  &quot;It&#39;s time for your training&quot;
+
+&#39;&#39;Do:&#39;&#39;
+[[Training|Train Claire]]
+&lt;&lt;endif&gt;&gt;&lt;&lt;else&gt;&gt;An empty laundry room.  You should find someone to help clean the motel soon.&lt;&lt;endif&gt;&gt;
+[[Back|Survey]] 
+</tw-passagedata>
+<tw-passagedata pid="67" name="Shops" tags="" position="3665,1275">&#39;&#39;Shops&#39;&#39;
+A bustling square in town home to a variety of shops.
+
+&#39;&#39;To:&#39;&#39;
+[[Adult Toy Stall]]
+
+[[Tailor&#39;s|Tailor]]
+
+[[Back|Town Center]] </tw-passagedata>
+<tw-passagedata pid="68" name="Adult Toy Stall" tags="" position="3665,1425">[[Back|Shops]] </tw-passagedata>
+<tw-passagedata pid="69" name="Town Road" tags="" position="3913,871">[[Town Gate]] </tw-passagedata>
+<tw-passagedata pid="70" name="StoryMenu" tags="" position="201,715">[[Tasks]]
+[[Inventory]]
+[[Quick Travel]]</tw-passagedata>
+<tw-passagedata pid="71" name="StoryCaption" tags="" position="69,593">
+
+&#39;&#39;Day: &lt;&lt;print $day&gt;&gt;
+Time: &lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $time is 0&gt;&gt;Morning&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $time is 1&gt;&gt;Midday&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $time is 2&gt;&gt;Afternoon&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $time is 3&gt;&gt;Evening&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $time is 4&gt;&gt;Night&lt;&lt;endif&gt;&gt;
+&lt;&lt;endnobr&gt;&gt;
+Income: &lt;&lt;print $income&gt;&gt;
+Gold: &lt;&lt;print $gold&gt;&gt;
+
+Gender: &lt;&lt;print $pgender&gt;&gt;
+Power: &lt;&lt;print $ppower&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $ppower &gt; 90&gt;&gt;Total domination of others, your words are always obeyed.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt;= 90 and $ppower &gt; 80&gt;&gt;Strong and intimadating, you command everyone around you.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt;= 80 and $ppower &gt; 70&gt;&gt;Your presence commands attention and notice.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt;= 70 and $ppower &gt; 60&gt;&gt;People will usually defer to your ideas or suggestions.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt;= 60 and $ppower &gt;= 40&gt;&gt;Neither dominant or submissive, you give and take as the situation warrents.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt; 40 and $ppower &gt; 30&gt;&gt;More often you find yourself taking the suggestions of others.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt;= 30 and $ppower &gt; 20&gt;&gt;You find pleasure in taking orders.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt;= 20 and $ppower &gt; 10&gt;&gt;You live to serve others and make them happy.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $ppower &lt; 10&gt;&gt;No thought is your own, a mindless slave for others to command.&lt;&lt;endif&gt;&gt;
+&#39;&#39;
+&lt;&lt;endnobr&gt;&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="72" name="Inventory" tags="" position="113,891">&#39;&#39;Inventory:&#39;&#39;
+&lt;&lt;set $invcount to []&gt;&gt;&lt;&lt;if $inv.length is 0&gt;&gt;You have nothing in your inventory.&lt;&lt;else&gt;&gt;&lt;&lt;for $i = 0; $i &lt; $inv.length; $i++&gt;&gt;&lt;&lt;set $count to $inv.count($inv[$i])&gt;&gt;&lt;&lt;if !$invcount.contains($inv[$i])&gt;&gt;&lt;&lt;print $count + &quot; x &quot; + $inv[$i]&gt;&gt;&lt;&lt;if $count &gt; 1&gt;&gt;s&lt;&lt;endif&gt;&gt;&lt;br&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $invcount.push($inv[$i])&gt;&gt;&lt;&lt;endfor&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;back&gt;&gt;
+
+</tw-passagedata>
+<tw-passagedata pid="73" name="Claire Clothes" tags="" position="2305,878">You bring Claire over to the hanging rack where she keeps her clothes.
+
+&quot;Now, &lt;&lt;print $titleClaire&gt;&gt;.  I want you to wear something different.&quot;  You say as you slowly strip her out of her &lt;&lt;print $wearingClaire&gt;&gt;.
+
+&lt;&lt;if $invClaire.contains(&quot;French maid outfit&quot;)&gt;&gt;[[Wear French Maid Outfit]]&lt;&lt;endif&gt;&gt;
+
+[[No change|Prepare Claire]] </tw-passagedata>
+<tw-passagedata pid="74" name="Courtyard" tags="" position="3406,863">&#39;&#39;Courtyard&#39;&#39;
+You enter the courtyard of the motel.  There is an empty pool infront of you and just beyond that is a road that runs alongside the motel.
+
+&#39;&#39;To:&#39;&#39;
+[[Pool]]
+
+[[Back|Survey]] </tw-passagedata>
+<tw-passagedata pid="75" name="Tailor" tags="" position="3540,1425">&#39;&#39;Tailor&#39;s&#39;&#39;
+You browse though racks of clothes, noticing several sets that you think are worthwhile.  The store owner looks ready to help if you need anything.
+
+&#39;&#39;Buy:&#39;&#39;
+[[French maid outfit]]: 1000 Gold
+
+[[Back|Shops]] </tw-passagedata>
+<tw-passagedata pid="76" name="Give Claire French Maid Outfit" tags="" position="2473,1018">You give Claire the French maid outfit.
+
+[[Next|Give Claire Clothes]] 
+&lt;&lt;set $inv.remove(&quot;French maid outfit&quot;)&gt;&gt;
+&lt;&lt;set $invClaire.push(&quot;French maid outfit&quot;)&gt;&gt;
+</tw-passagedata>
+<tw-passagedata pid="77" name="Wear French Maid Outfit" tags="" position="2126,766">Claire is now wearing the sexy French maid outfit.
+&lt;&lt;set $wearingClaire to &quot;French maid outfit&quot;&gt;&gt;
+
+[[Next|Prepare Claire]] </tw-passagedata>
+<tw-passagedata pid="78" name="French maid outfit" tags="" position="3540,1575">Lots of frills on this low cut top and short skirt ensemble, comes with garter belt and stockings and feather duster.
+
+Are you sure?
+[[Yes|Buy French maid outfit]]
+
+[[No|Tailor]] </tw-passagedata>
+<tw-passagedata pid="79" name="Buy French maid outfit" tags="" position="3540,1725">&lt;&lt;if $gold &gt;= 1000&gt;&gt;&lt;&lt;set $inv.push(&quot;French maid outfit&quot;)&gt;&gt;
+&lt;&lt;set $gold to $gold - 1000&gt;&gt;&quot;You bought a French maid outfit.&quot;&lt;&lt;else&gt;&gt;&quot;You don&#39;t have enough money.&quot;&lt;&lt;endif&gt;&gt;
+
+[[Next|Tailor]] </tw-passagedata>
+<tw-passagedata pid="80" name="Train Claire" tags="" position="2690,1131">She lowers herself to her knees, eyes cast down.  &quot;How will &lt;&lt;print $titlePlayer&gt;&gt; use his little &lt;&lt;print $titleClaire&gt;&gt;?&quot;
+
+[[Prepare|Prepare Claire]]
+
+[[Command|Command Claire]]
+
+[[Penetrate|Penetrate Claire]]</tw-passagedata>
+<tw-passagedata pid="81" name="Town Center" tags="" position="3923,1178">&#39;&#39;Town Center&#39;&#39;
+
+&#39;&#39;To:&#39;&#39;
+[[Notice Board]]
+
+[[Bar]]
+
+[[Shops]]
+
+[[Town Hall]]
+
+[[University]]
+
+[[Back to the Motel|Survey]]
+</tw-passagedata>
+<tw-passagedata pid="82" name="Notice Board" tags="" position="3900,1391">&#39;&#39;Notice Board&#39;&#39;
+
+&lt;&lt;if $tasks.contains(&quot;-Hire a maid&quot;)&gt;&gt;&lt;&lt;if $tasks.contains(&quot;-Wait for a maid to apply&quot;)&gt;&gt;Your want ad is proudly attached to the notice board.&lt;&lt;elseif $inv.contains(&quot;Approved maid wanted ad&quot;) and !$completed.contains(&quot;-Post the ad&quot;)&gt;&gt;
+&#39;&#39;Do&#39;&#39;
+[[Post ad for maid|Post 1]]
+&lt;&lt;else&gt;&gt;It looks like this would be a good place to post an add for a maid.  However there is an official looking notice at the bottom of the board that reads.  &quot;All posts must be approved by city hall.&quot;
+&lt;&lt;set $tasks.push(&quot;-Make maid wanted ad&quot;)&gt;&gt;
+&lt;&lt;set $tasks.push(&quot;-Get ad approved at City Hall&quot;)&gt;&gt;
+&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;
+[[Back|Town Center]]</tw-passagedata>
+<tw-passagedata pid="83" name="Bar" tags="" position="4168,1408">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="84" name="Town Hall" tags="" position="4538,1268">&#39;&#39;Town Hall&#39;&#39;
+
+&lt;&lt;if $inv.contains(&quot;Maid wanted ad&quot;)&gt;&gt;[[Get ad approved|Town Hall 1]]&lt;&lt;endif&gt;&gt;
+
+[[Back|Town Center]] </tw-passagedata>
+<tw-passagedata pid="85" name="Quick Travel" tags="" position="203,1036">&lt;&lt;if $locations.length is 0&gt;&gt;You haven&#39;t discovered any locations yet.  Check back after you&#39;ve done some exploring.&lt;&lt;elseif $time &lt; 4&gt;&gt;&#39;&#39;To:&#39;&#39;
+&lt;&lt;if $locations.contains(&quot;Motel&quot;)&gt;&gt;[[Motel|Survey]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $locations.contains(&quot;Town&quot;)&gt;&gt;[[Town Gate]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;else&gt;&gt;It&#39;s too dark to go traveling.
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;back&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="86" name="Post 1" tags="" position="3900,1541">You post the ad.
+
+[[Next|Notice Board]] 
+
+&lt;&lt;set $tasks.remove(&quot;-Post the ad&quot;)&gt;&gt;
+&lt;&lt;set $tasks.push(&quot;-Wait for a maid to apply&quot;)&gt;&gt;
+&lt;&lt;set $completed.push(&quot;-Post the ad&quot;)&gt;&gt;</tw-passagedata>
+<tw-passagedata pid="87" name="Stacey Talk A" tags="" position="2681,361">&quot;Sure thing boss.&quot;  Stacey replies.  She dissapears for a few moments and returns with a professional looking classified ad advertising your desire to hire a maid.
+&lt;&lt;set $tasks.remove(&quot;-Make maid wanted ad&quot;)&gt;&gt;
+&lt;&lt;set $completed.push(&quot;-Make maid wanted ad&quot;)&gt;&gt;
+&lt;&lt;set $inv.push(&quot;Maid wanted ad&quot;)&gt;&gt;
+
+[[Next|Stacey Talk Friendly]] </tw-passagedata>
+<tw-passagedata pid="88" name="University" tags="" position="4248,1064">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="89" name="Town Hall 1" tags="" position="4538,1418">They approve your ad.
+
+[[Next|Town Hall]]
+
+&lt;&lt;set $inv.remove(&quot;Maid wanted ad&quot;)&gt;&gt;
+&lt;&lt;set $inv.push(&quot;Approved maid wanted ad&quot;)&gt;&gt;
+&lt;&lt;set $tasks.remove(&quot;-Get ad approved at City Hall&quot;)&gt;&gt;
+&lt;&lt;set $tasks.push(&quot;-Post the ad&quot;)&gt;&gt;
+</tw-passagedata>
+<tw-passagedata pid="90" name="Claire 1" tags="" position="3091,356">You hire Claire
+&lt;&lt;set $tasks.remove(&quot;-Hire a maid&quot;)&gt;&gt;
+&lt;&lt;set $tasks.remove(&quot;-Wait for a maid to apply&quot;)&gt;&gt;
+&lt;&lt;set $chars.push(&quot;Claire&quot;)&gt;&gt;
+&lt;&lt;set $completed.push(&quot;-Hire a maid&quot;)&gt;&gt;
+
+[[Next|Survey]] </tw-passagedata>
+</tw-storydata>
